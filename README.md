@@ -7,14 +7,14 @@ Library for extracting QR images for BBAN, IBAN, Bankgirot and PlusGirot payment
 ```
 PaymentInvoiceQR qr = new PaymentInvoiceQR("Test company AB", "555555-5555") {
     InvoiceReference = "52456",
-    InvoiceDate = _invoiceDate.ToString("YYYYMMDD"),
-    DueDate = _invoiceDate.AddDays(_invoiceDaysToPay).ToString("YYYYMMDD"),
+    InvoiceDate = new DateTime(2018, 7, 30),
+    DueDate = new DateTime(2018, 8, 29),
     DueAmount = 200,
     PaymentType = PaymentType.BG,
     Account = "433-8778"
 };
 
-Bitmap bmp = qr.GetQR(100);
+Bitmap bmp = qr.GetQR(20);
 ```
 
 ## License
