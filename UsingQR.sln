@@ -3,9 +3,14 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27924.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UsingQR.Core", "UsingQR.Core\UsingQR.Core.csproj", "{980DE95D-4525-4302-B258-6A9D62AD09E8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UsingQR.Core", "UsingQR.Core\UsingQR.Core.csproj", "{980DE95D-4525-4302-B258-6A9D62AD09E8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UsingQR.Core.UnitTests", "UsingQR.Core.UnitTests\UsingQR.Core.UnitTests.csproj", "{C0336341-522B-470B-8997-29B86B09801A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UsingQR.Core.UnitTests", "UsingQR.Core.UnitTests\UsingQR.Core.UnitTests.csproj", "{C0336341-522B-470B-8997-29B86B09801A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{BCE9C769-F43E-45CD-9493-B5F45431FE1C}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

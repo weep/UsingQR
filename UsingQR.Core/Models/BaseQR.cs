@@ -22,6 +22,7 @@ namespace UsingQR.Core.Models
             var settings = new JsonSerializerSettings {
                 NullValueHandling = NullValueHandling.Ignore,
                 DefaultValueHandling = DefaultValueHandling.Ignore,
+                DateFormatString = "yyyyMMdd"
             };
             settings.Converters.Add(new DecimalJsonConverter());
             return JsonConvert.SerializeObject(this, Formatting.None, settings);
@@ -77,10 +78,10 @@ namespace UsingQR.Core.Models
         public string CreditInvoiceReference { get; set; }
 
         [JsonProperty("idt")]
-        public string InvoiceDate { get; set; }
+        public DateTime InvoiceDate { get; set; }
 
         [JsonProperty("ddt")]
-        public string DueDate { get; set; }
+        public DateTime DueDate { get; set; }
 
         [JsonProperty("due")]
         public decimal DueAmount { get; set; }

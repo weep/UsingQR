@@ -1,4 +1,5 @@
-﻿using UsingQR.Core.Models;
+﻿using System;
+using UsingQR.Core.Models;
 using Xunit;
 
 namespace UsingQR.Core.UnitTests
@@ -12,8 +13,8 @@ namespace UsingQR.Core.UnitTests
 
             var a = new PaymentInvoiceQR("Test company AB", "555555-5555") {
                 InvoiceReference = "934000000000159",
-                InvoiceDate = "20120215",
-                DueDate = "20120215",
+                InvoiceDate = new DateTime(2012, 2, 15),
+                DueDate = new DateTime(2012, 2, 15),
                 CountryCode = "SE",
                 DueAmount = 10.75m,
                 Currency = "DKK",
@@ -34,7 +35,7 @@ namespace UsingQR.Core.UnitTests
 
             var a = new PaymentInvoiceQR("Test Company", "98-0202855") {
                 InvoiceReference = "934000000000159",
-                DueDate = "20120215",
+                DueDate = new DateTime(2012, 2, 15),
                 CountryCode = "US",
                 DueAmount = 1.75m,
                 Currency = "USD",

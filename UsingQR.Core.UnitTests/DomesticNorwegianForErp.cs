@@ -1,4 +1,5 @@
-﻿using UsingQR.Core.Models;
+﻿using System;
+using UsingQR.Core.Models;
 using Xunit;
 
 namespace UsingQR.Core.UnitTests
@@ -12,8 +13,8 @@ namespace UsingQR.Core.UnitTests
 
             var a = new PaymentInvoiceQR("Test Company AS", "123456789MVA") {
                 InvoiceReference = "00001",
-                InvoiceDate = "20130424",
-                DueDate = "20130524",
+                InvoiceDate = new DateTime(2013, 4, 24),
+                DueDate = new DateTime(2013, 5, 24),
                 DueAmount = 240,
                 HighVATAmount = 25,
                 MediumVATAmount = 15,
