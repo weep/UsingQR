@@ -5,7 +5,13 @@
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Company>Boysenberry AB</Company>
     <Authors>Oscar Holmér</Authors>
-    <Version>0.1.1</Version>
+    <Version>0.1.2</Version>
+    <PackageLicenseUrl>https://github.com/weep/UsingQR/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/weep/UsingQR</PackageProjectUrl>
+    <RepositoryUrl></RepositoryUrl>
+    <PackageTags>C# csharp qr UsingQR bg bankgirot plusgirot</PackageTags>
+    <Description>Library for extracting QR images for BBAN, IBAN, Bankgirot and PlusGirot payments.</Description>
+    <Copyright>Oscar Holmér</Copyright>
   </PropertyGroup>
 
   <ItemGroup>

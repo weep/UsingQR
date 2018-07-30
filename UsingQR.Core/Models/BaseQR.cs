@@ -31,7 +31,7 @@ namespace UsingQR.Core.Models
         public Bitmap GetQR(int pixelsPerModule = 20, QRCodeGenerator.ECCLevel eCCLevel = QRCodeGenerator.ECCLevel.Q)
         {
             QRCodeGenerator qrGenerator = new QRCodeGenerator();
-            var data = this.ToString();
+            var data = ToJson();
             QRCodeData qrCodeData = qrGenerator.CreateQrCode(data, eCCLevel);
             QRCode qrCode = new QRCode(qrCodeData);
             Bitmap qrCodeImage = qrCode.GetGraphic(pixelsPerModule);
