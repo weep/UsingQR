@@ -28,7 +28,7 @@ namespace UsingQR.Core.Models
             return JsonConvert.SerializeObject(this, Formatting.None, settings);
         }
 
-        public Bitmap GetQR(int pixelsPerModule = 20, QRCodeGenerator.ECCLevel eCCLevel = QRCodeGenerator.ECCLevel.Q)
+        public Bitmap GetQR(int pixelsPerModule = 10, QRCodeGenerator.ECCLevel eCCLevel = QRCodeGenerator.ECCLevel.Q)
         {
             QRCodeGenerator qrGenerator = new QRCodeGenerator();
             var data = ToJson();
